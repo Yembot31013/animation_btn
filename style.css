@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-main{
+  background: #272433;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main .container{
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main .container .icon-conatiner{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.container-main .container .icon-conatiner li{
+  list-style: none;
+  background: #47435a;
+  /* background: #282828; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.container-main .container .icon-conatiner.initial{
+  cursor: pointer;
+  gap: 0;
+}
+
+.container-main .container .icon-conatiner li.initial{
+  scale: 0.3;
+  padding: 0.1rem;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  /* transition: scale 1s; */
+}
+
+.container-main .container .icon-conatiner li.initial svg{
+  color: #fff;
+}
+
+.container-main .container .icon-conatiner li.initial.center svg{
+  color: #fff;
+}
+
+.container-main .container .icon-conatiner li.center.initial{
+  background: #fff;
+}
+
+.container-main .container .icon-conatiner li svg{
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.container-main .container .icon-conatiner li svg:hover{
+  color: #00ea65;
+  filter: blur(0.5px) drop-shadow(0 0 0.5rem #00ea65)
+}
+
+.container-main .container .icon-conatiner li.center{
+  background: #00ff61;
+}
+
+.container-main .container .icon-conatiner li.center svg{
+  filter: none;
+  color: #272433;
+}
